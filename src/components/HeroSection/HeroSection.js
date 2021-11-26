@@ -11,7 +11,7 @@ import {
   ArrowForward,
   ArrowRight,
 } from "./HeroSectionElements";
-import Video from "../../videos/video.mp4";
+import Video from "../../assets/videos/video.mp4";
 
 const HeroSection = () => {
   const [hover, setHover] = useState(false);
@@ -33,7 +33,7 @@ const HeroSection = () => {
         </HeroP>
         <HeroBtnWrapper>
           <Button
-            to="signip"
+            to="signin"
             onMouseEnter={onHover}
             onMouseLeave={onHover}
             primary="true"

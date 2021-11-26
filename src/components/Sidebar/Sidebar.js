@@ -10,6 +10,9 @@ import {
   SidebarRouter,
 } from "./SidebarElements";
 
+// 화면사이즈가 작아졌을때 필요한 컴포넌트
+// isOpen이 True일때,
+// toggle 버튼이 눌릴때마다, 매번 사이드바가 내려갔다 올라갔다 작동함
 const Sidebar = ({ isOpen, toggle }) => {
   return (
     <SidebarContainer isOpen={isOpen} onClick={toggle}>

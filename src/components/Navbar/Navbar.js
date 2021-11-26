@@ -12,6 +12,8 @@ import {
   NavBtnLink,
 } from "./NavbarElements";
 
+//여기 toggle 기능이 어디서 적용되는지 props를 보냄?갖고옴? 적용.
+//화면 크기에 따라 토글이 활용되는 메뉴 아이콘이 생성되고, 아니고 하는 기능. @media display
 const Navbar = ({ toggle }) => {
   return (
     <>
