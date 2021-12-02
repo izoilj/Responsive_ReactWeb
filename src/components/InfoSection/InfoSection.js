@@ -1,5 +1,8 @@
 import React from "react";
-import { Button } from "react-scroll";
+// import { Button } from "react-scroll";
+import { Button } from "../ButtonElements";
+import ImgCar from "../../assets/images/svg-1.svg";
+
 import {
   BtnWrap,
   Column1,
@@ -15,25 +18,37 @@ import {
   TopLine,
 } from "./InfoElements";
 
-const InfoSection = () => {
+const InfoSection = ({
+  lightBg,
+  id,
+  imgStart,
+  topLine,
+  lightText,
+  headline,
+  darkText,
+  description,
+  buttonLabel,
+  img,
+  alt,
+}) => {
   return (
     <>
-      <InfoContainer>
+      <InfoContainer lightBg={lightBg} id={id}>
         <InfoWrapper>
-          <InfoRow>
+          <InfoRow imgStart={imgStart}>
             <Column1>
               <TextWrapper>
-                <TopLine>TopLine</TopLine>
-                <Heading>Heading</Heading>
-                <SubTitle>Subtitle</SubTitle>
+                <TopLine>{topLine}</TopLine>
+                <Heading lightText={lightText}>{headline}</Heading>
+                <SubTitle darkText={darkText}>{description}</SubTitle>
                 <BtnWrap>
-                  <Button to="home" />
+                  <Button to="home">{buttonLabel}</Button>
                 </BtnWrap>
               </TextWrapper>
             </Column1>
             <Column2>
               <ImgWrap>
-                <Img />
+                <Img src={ImgCar} alt={alt} />
               </ImgWrap>
             </Column2>
           </InfoRow>
