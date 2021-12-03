@@ -8,6 +8,7 @@ import {
 } from "../components/InfoSection/Data";
 import Navbar from "../components/Navbar/Navbar";
 import Sidebar from "../components/Sidebar/Sidebar";
+import ServicesSection from "../components/Sevices/ServicesSection";
 
 const Home = () => {
   // 사이드바는 모바일크기일때만 메뉴버튼이 생성되고, 그때 동작이 다름
@@ -26,6 +27,7 @@ const Home = () => {
       <HeroSection />
       <InfoSection {...homeObjOne} />
       <InfoSection {...homeObjTwo} />
+      <ServicesSection />
       <InfoSection {...homeObjThree} />
     </>
   );
